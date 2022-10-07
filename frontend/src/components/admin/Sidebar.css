@@ -1,0 +1,111 @@
+/* .mainHearder{
+    display: none;
+} */
+.sidebar {
+    z-index: 9999;
+    background-color: #fff;
+    min-width: 230px;
+}
+
+.sidebar>div{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0 4vmax;
+    z-index: 9999!important;
+}
+
+.sidebar a:first-child {
+    padding: 0;
+}
+
+.sidebar a>img {
+    width: 100%;
+    max-width: 200px;
+    transition: all 0.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.sidebar a img:hover {
+    filter: drop-shadow(1px 1px 1px tomato);
+}
+
+.sidebar a {
+    text-decoration: none;
+    transition: all 0.5s;
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.493);
+    font: 200 1rem "Roboto";
+}
+
+.sidebar a:hover {
+    color: tomato;
+    /* transform: scale(1.1); */
+}
+
+.sidebar a.active {
+    color: tomato;
+    /* transform: scale(1.1); */
+}
+
+.sidebar a>p {
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar a>p>svg {
+    margin-right: 0.5rem;
+}
+
+.sidebar_closebtn,
+.sidebar_openbtn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar_openbtn > svg{
+    font-size: 47px!important;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar>div {
+        width: 230px;
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+        background-color: rgb(245, 245, 245);
+        z-index: 9999!important;
+    }
+
+
+    .sidebar_closebtn,
+    .sidebar_openbtn {
+        display: unset;
+    }
+
+    .sidebar .logo_btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    .sidebar .logo_btn a{
+       padding: 0;
+    }
+
+    .sidebar .logo_btn a img{
+        width: 80%;
+        height: auto;
+        display: unset;
+    }
+}

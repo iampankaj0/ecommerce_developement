@@ -1,0 +1,188 @@
+.newProductContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    padding: 20px;
+}
+
+.newProductContainer h1 {
+    color: rgba(0, 0, 0, 0.733);
+    font: 500 18px "Roboto";
+    margin-bottom: 10px;
+    align-items: center
+}
+
+.createProductForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: auto;
+    padding: 3vmax;
+    /* height: 70%; */
+    transition: all 0.5s;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 27%);
+}
+
+
+.createProductForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.createProductForm>div>input,
+.createProductForm>div>textarea,
+.createProductForm>div>select {
+    padding: 1vmax 40px;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 14px cursive;
+    outline: none;
+    margin: 3px;
+}
+
+.createProductForm>div>svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+#createProductFormImage {
+    width: 100% !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#createProductFormImage img {
+    width: 3rem;
+    /* border-radius: 100%; */
+}
+
+#createProductFormFile>input {
+    display: flex;
+    padding: 0 !important;
+}
+
+#createProductFormFile>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 25px;
+    border: none;
+    margin: 0;
+    font: 400 15px cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+}
+
+#createProductFormFile>input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.createProductBtn {
+    border: none;
+    font: 300 15px "Roboto";
+    margin-top: 10px;
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 22%);
+}
+
+.createProductBtn:hover {
+    background-color: rgb(176, 66, 46);
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 630px) {
+    .createProductForm{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .newProductContainer{
+        background-color: #fff;
+        height: auto;
+        padding: 0;
+    }
+
+    .loginSignUpContainer {
+        background-color: #fff;
+    }
+
+    .loginSignUpBox {
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .login-SignUp_Toggle {
+        height: 5vmax;
+    }
+
+    .login-SignUp_Toggle>p {
+        font: 300 2vmax 'Roboto';
+    }
+
+
+
+    .createProductForm {
+        padding: 5vmax;
+        width: auto;
+        margin: 15px;
+    }
+
+    /* .createProductForm>div>input,
+    .createProductForm>div>textarea,
+    .createProductForm>div>select {
+        padding: 2.5vmax 5vmax;
+        font: 300 2vmax cursive;
+    } */
+
+    /* .createProductForm>div>svg {
+        font-size: 2.8vmax;
+    } */
+
+
+
+    #createProductFormFile>img {
+        width: 8vmax;
+        border-radius: 100%;
+    }
+
+    /* #createProductFormFile>input::file-selector-button {
+        height: 7vh;
+        font: 400 1.8vmax cursive;
+    } */
+
+    /* .createProductBtn {
+        font: 300 1.8vmax "Roboto";
+        padding: 1.8vmax;
+    } */
+}
+
+@media screen and (max-width: 400px) {
+    .createProductForm {
+        padding: 2vmax;
+    }
+}

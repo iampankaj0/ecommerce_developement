@@ -1,0 +1,243 @@
+.confirmOrderPage {
+    /* height: 100vh; */
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+
+.confirmOrderPage>div:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.confirmshippingArea {
+    padding: 5vmax;
+    padding-bottom: 0;
+}
+
+.confirmshippingArea>p {
+    font: 400 18px "Roboto";
+}
+
+.confirmshippingAreaBox,
+.confirmshippingAreaContainer {
+    margin: 2vmax;
+}
+
+.confirmshippingAreaBox>div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.confirmshippingAreaBox>div>p {
+    font: 400 15px "Roboto";
+    color: black;
+}
+
+.confirmshippingAreaBox>div>span {
+    font: 100 15px "Roboto";
+    color: #575757;
+    margin: 0 1vmax;
+}
+
+.confirmCartItems {
+    padding: 5vmax;
+    padding-top: 2vmax;
+}
+
+.confirmCartItems>p {
+    font: 400 18px "Roboto";
+}
+
+.confirmCartItemsContainer {
+    max-height: 20vh;
+    overflow-y: auto;
+}
+
+.confirmCartItemsContainer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: 400 1vmax "Roboto";
+    margin: 2vmax 0;
+}
+
+.confirmCartItemsContainer>div>img {
+    width: 50px;
+}
+
+.confirmCartItemsContainer>div>a {
+    color: #575757;
+    width: 60%;
+    margin: 0 2vmax;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.confirmCartItemsContainer>div>a:hover {
+    color: tomato;
+}
+
+.confirmCartItemsContainer>div>span {
+    color: #5e5e5e;
+    font: 100 12px "Roboto";
+}
+
+.orderSummary {
+    padding: 7vmax;
+}
+
+.orderSummary>p {
+    align-items: center;
+    font: 400 18px "Roboto";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.orderSummary>div>div {
+    display: flex;
+    font: 300 14px "Roboto";
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.orderSummary>div>div>span {
+    color: rgba(0, 0, 0, 0.692);
+}
+
+
+.orderSummaryTotal {
+    display: flex;
+    font: 300 14px "Roboto";
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.363);
+    padding: 2vmax 0;
+}
+
+.orderSummary>button {
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    padding: 1vmax;
+    border: none;
+    width: 100%;
+    margin: auto;
+    transition: all 0.5s;
+    font: 400 14px "Roboto";
+    cursor: pointer;
+}
+
+.orderSummary>button:hover {
+    background-color: rgb(193, 71, 50);
+}
+
+
+@media screen and (max-width: 600px) {
+    .confirmOrderPage {
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+
+
+    .confirmOrderPage>div:last-child {
+        border-left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.247);
+    }
+
+    /* .confirmshippingArea>p {
+        font: 400 6vmax "Roboto";
+    } */
+
+    .confirmshippingAreaBox>div {
+        display: flex;
+        margin: 2vmax 0;
+    }
+
+    /* .confirmshippingAreaBox>div>p {
+        font: 400 4vmax "Roboto";
+    } */
+
+    /* .confirmshippingAreaBox>div>span {
+        font: 100 4vmax "Roboto";
+    } */
+
+    /* .confirmCartItems>p {
+        font: 400 6vmax "Roboto";
+    } */
+
+    .confirmCartItemsContainer {
+        max-height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .confirmCartItemsContainer>div {
+        margin: 4vw 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid rgb(184, 184, 184);
+        width: 44%;
+    }
+
+    .confirmCartItemsContainer>div>img {
+        width: 100px;
+    }
+
+    .confirmCartItemsContainer>div>a {
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .confirmCartItemsContainer>div>span {
+        padding: 10px 0;
+    }
+
+
+    /* .orderSummary {
+        padding: 12vw;
+    } */
+
+    .orderSummary>p {
+        font: 400 18px "Roboto";
+        padding: 4vw;
+    }
+
+    .orderSummary>div>div {
+        font: 300 14px "Roboto";
+    }
+
+    .orderSummaryTotal {
+        font: 300 14px "Roboto";
+        padding: 5vmax 0;
+    }
+
+    .orderSummary>button {
+        font: 300 14px "Roboto";
+        padding: 15px;
+        margin: 4vw auto;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .confirmCartItemsContainer>div {
+        width: 43%;
+    }
+
+    .confirmshippingAreaBox> div:nth-child(3) > span{
+        word-break: break-word;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .confirmCartItemsContainer>div {
+        width: 100%;
+    }
+}
+

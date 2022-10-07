@@ -1,0 +1,131 @@
+.orderDetailsPage {
+    background-color: #fff;
+}
+
+.orderDetailsPage>h1 {
+    font: 300 23px "Roboto";
+    margin: 4vmax 0 0 0;
+    color: tomato;
+    padding: 0 5vmax;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.orderDetailsContainer {
+    padding: 5vmax;
+    padding-bottom: 0;
+}
+
+.orderDetailsContainer>p {
+    font: 400 18px "Roboto";
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+    margin: 2vmax;
+}
+
+.orderDetailsContainerBox>div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.orderDetailsContainerBox>div>p {
+    font: 400 14px "Roboto";
+    color: black;
+}
+
+.orderDetailsContainerBox>div>span {
+    font: 100 14px "Roboto";
+    color: #575757;
+    margin: 0 1vmax;
+}
+
+
+.orderDetailsCartItems>p {
+    font: 400 1.8vmax "Roboto";
+}
+
+.orderDetailsCartItems {
+    padding: 2vmax 5vmax;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.orderDetailsCartItemsContainer>div {
+    display: flex;
+    align-items: center;
+    margin: 2vmax 0;
+    font: 400 1vmax "Roboto";
+}
+
+
+.orderDetailsCartItemsContainer>div>img {
+    width: 3vmax;
+}
+
+
+.orderDetailsCartItemsContainer>div>a {
+    width: 60%;
+    color: #575757;
+    font-size: 14px;
+    margin: 0 2vmax;
+    text-decoration: none;
+}
+
+.orderDetailsCartItemsContainer>div>span {
+    font: 100 14px "Roboto";
+    color: #5e5e5e;
+}
+
+
+@media screen and (max-width: 600px) {
+    .orderDetailsContainer>p {
+        font: 400 22px "Roboto";
+    }
+
+    .orderDetailsContainerBox>div {
+        margin: 2vmax 0;
+    }
+
+    .orderDetailsContainerBox>div>p {
+        font: 400 13px "Roboto";
+    }
+
+    .orderDetailsContainerBox>div>span {
+        font: 100 13px "Roboto";
+    }
+
+    .orderDetailsCartItems>p {
+        font: 400 13px "Roboto";
+    }
+
+
+    .orderDetailsCartItemsContainer>div {
+        font: 400 3vmax "Roboto";
+        margin: 4vw 0;
+        flex-wrap: wrap;
+        border: 1px solid #00000036;
+    }
+
+    .orderDetailsCartItemsContainer>div>img {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .orderDetailsCartItemsContainer>div>a {
+        width: 100%;
+        margin: 2vw;
+    }
+
+    .orderDetailsCartItemsContainer>div>span {
+        font: 100 13px "Roboto";
+        width: 100%;
+        text-align: center;
+    }
+
+    .orderDetailsPage>h1 {
+        font: 300 17px "Roboto";
+        margin: 85px 0 0 0;
+    }
+}

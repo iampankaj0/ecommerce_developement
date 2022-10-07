@@ -1,0 +1,27 @@
+.MuiStepConnector-line {
+    display: none !important;
+}
+
+.MuiStepConnector-root {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.MuiStepConnector-active,
+.MuiStepConnector-completed {
+    background-color: tomato;
+}
+
+@media screen and (max-width: 440px) {
+    .css-10mg1vw-MuiStepper-root{
+        margin-top: 30px;
+    }
+
+    .css-ahj2mt-MuiTypography-root {
+        font-size: 14px !important;
+    }
+
+    .css-i4bv87-MuiSvgIcon-root {
+        font-size: 20px !important;
+    }
+}
